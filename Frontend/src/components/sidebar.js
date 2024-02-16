@@ -35,7 +35,7 @@ function Sidebar() {
           </a>
         </div>
         <div className="social-link">
-          <a href={resume}>
+          <a href={resume} download>
             <img src={resumeImage} alt="Resume" className="social-icon" />
             <span>Resume</span>
           </a>

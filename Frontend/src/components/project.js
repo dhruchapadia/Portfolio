@@ -19,10 +19,11 @@ const ProjectCard = ({ title, description, technology, link }) => {
 };
 
 function Project() {
+  const url = process.env.REACT_APP_MONGO_URL;
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:4000/project")
+    axios.get(url+"project")
     .then(response => {
       setProjects(response.data);
     })

@@ -5,12 +5,13 @@ function Timeline() {
   const [details, setDetails] = useState(null);
   const [workEx, setWorkEx] = useState([]);
 
+  const url = process.env.REACT_APP_MONGO_URL;
   const showDetails = (company) => {
     setDetails(workEx.find(item => item.company === company));
   };
 
   useEffect(() => {
-    axios.get("http://localhost:4000/workex")
+    axios.get(url+"workex")
       .then(response => {
         setWorkEx(response.data);
       })
