@@ -18,7 +18,7 @@ function App() {
             <div className='intro'>
               <h4>Hi, I'm</h4>
               <h2>Dhru Chapadia</h2>
-              <h5>a recent graduate from Stevens Institute of Technology with a Master of Science degree in Computer Science. You might also know me as Juzouruto in gaming circles or other online communities. I'm love coding , anime and gaming. currently on the lookout for my first job in states.</h5>
+              <h5>a recent graduate from Stevens Institute of Technology with a Master of Science degree in Computer Science. I also use Juzouruto as username in gaming circles or other online communities. I love coding , anime and gaming. Currently on the lookout for my first job in states.</h5>
             </div>
             </div>
             <div className='image-container'>
