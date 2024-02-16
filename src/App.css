@@ -1,0 +1,232 @@
+.App {
+  position: relative;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+body{
+  background-color: #14131a !important;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.spotifyTable {
+  width: 100%;
+}
+.track-table {
+  width: 100%;
+  background-color: #1c1b23;
+  color: #fff;
+}
+.track-table a, .now-playing a{
+  color: #2bd576 !important;
+  text-decoration: none;
+}
+.track-table th, .track-table td {
+  border: 5px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.content {
+  text-align: center;
+  height: 100%;
+  margin-left: 15%;
+  width: 85%;
+  padding: 20px;
+}
+.sidebar {
+  width: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #1c1b23; 
+  color: #8b8a91;
+  padding-top: 20px;
+}
+
+.social-link{
+  padding: 15px 10px;
+}
+
+.social-link span{
+  padding: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+.now-playing {
+  position: fixed;
+  bottom: 0;
+  width: inherit;
+  left: 0;
+  padding: 10px;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1); 
+}
+.social-link a:hover {
+  transform: translateY(-10px); 
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #8b8a91;
+  font-size: 16px; 
+  margin-bottom: 10px; 
+}
+
+.sidebar a:hover {
+  color: #fff; 
+}
+
+
+.section {
+  padding: 20px;
+  background-color: #14131a;
+  color: #8b8a91 !important;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(7, 15, 43, 0.617); 
+}
+.profile {
+  padding: 20px;
+  background-color: #1c1b23;
+  color: #8b8a91;
+  width: 100%;
+  max-height: 250px;
+  margin: 15px auto;
+  box-shadow: 0 4px 6px rgba(7, 15, 43, 0.617); 
+  text-align: left;
+}
+.skill {
+  padding: 20px;
+  background-color: #14131a;
+  color: #8b8a91 !important;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+.card-group div{
+background-color:#14131a !important;
+box-shadow: 0 4px 8px #000; 
+}
+.skillTitle{
+  color: #8b8a91;
+}
+.flexcard {
+  background-color: #1c1b23;
+  width: calc(25% - 20px);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #8b8a91;
+}
+
+.title{
+  text-align: left;
+}
+.highlighted h3 {
+  color: #2bd576; 
+}
+.highlighted {
+  box-shadow: 6px 4px 4px #2bd5765d !important;
+}
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.flex-container , .profile {
+  display: flex;
+}
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+}
+.image-container {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 5px solid white;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #1c1b23;
+  height: 200px;
+}
+
+.timeline .left {
+  width: 30%;
+}
+
+.timeline .right {
+  width: 70%;
+}
+
+.company {
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  transition: background-color .5s, color .5s;
+  padding-left: 20px;
+}
+.company:hover {
+  background-color:#fff;
+  color:#2bd576;
+  transition: background-color .5s, color .5s;
+}
+.details, .default-message{
+  padding: 10px;
+  text-align: left;
+}
+.details a{
+  color: #2bd576;
+}
+.details a:hover{
+  color: #fff;
+}
+.project-container{
+  text-align: left;
+  padding: 20px 0px;
+}
+.project-card{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color:#1c1b23;
+  box-shadow: 6px 4px 4px hsla(0, 0%, 100%, 0.363);
+  margin: 20px 0px;
+}
+.project-details {
+  flex: 1;
+}
+.github-icon {
+  position: absolute; 
+  padding:20px;
+  bottom: 0; 
+  right: 0; 
+}
