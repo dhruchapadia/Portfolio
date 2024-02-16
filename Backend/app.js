@@ -24,6 +24,14 @@ router.get('/project', async (req, res) => {
         res.status(500).send(e);
     }
 });
+router.get('/skill', async (req, res) => {
+    try {
+        const skillList = await data.getSkill();
+        res.json(skillList);
+    } catch (e) {
+        res.status(500).send(e);
+    }
+});
 
 app.use('/', router);
 

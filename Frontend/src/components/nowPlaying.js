@@ -62,7 +62,7 @@ const NowPlaying = () => {
           <p>{nowPlaying.artists.map(artist => artist.name).join(', ')}</p>
         </div>
       ) : (
-        <p>Juzou is not listening to Spotify right now.</p>
+        <h4>Juzou is not listening to Spotify right now.</h4>
       )}
     </div>
   );

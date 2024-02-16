@@ -14,7 +14,7 @@ body{
   }
 }
 .spotifyTable {
-  width: 100%;
+  margin: 10px;
 }
 .track-table {
   width: 100%;
@@ -89,7 +89,6 @@ body{
 
 
 .section {
-  padding: 20px;
   background-color: #14131a;
   color: #8b8a91 !important;
   margin: 15px auto;
@@ -97,7 +96,6 @@ body{
   box-shadow: 0 4px 6px rgba(7, 15, 43, 0.617); 
 }
 .profile {
-  padding: 20px;
   background-color: #1c1b23;
   color: #8b8a91;
   width: 100%;
@@ -107,7 +105,6 @@ body{
   text-align: left;
 }
 .skill {
-  padding: 20px;
   background-color: #14131a;
   color: #8b8a91 !important;
   margin: 15px auto;
@@ -167,11 +164,13 @@ box-shadow: 0 4px 8px #000;
 }
 
 .timeline {
+  margin: 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   background-color: #1c1b23;
   height: 200px;
+  border-radius: 10px;
 }
 
 .timeline .left {
@@ -219,7 +218,7 @@ box-shadow: 0 4px 8px #000;
   padding: 20px;
   background-color:#1c1b23;
   box-shadow: 6px 4px 4px hsla(0, 0%, 100%, 0.363);
-  margin: 20px 0px;
+  margin: 20px 10px;
 }
 .project-details {
   flex: 1;

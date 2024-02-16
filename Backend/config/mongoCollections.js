@@ -20,4 +20,5 @@ NOTE: YOU WILL NEED TO CHANGE THE CODE BELOW TO HAVE THE COLLECTION(S) REQUIRED 
 module.exports = {
   WorkEx: getCollectionFn('WorkEx'),
   Project: getCollectionFn('Project'),
+  Skills: getCollectionFn('Skill'),
 };

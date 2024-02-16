@@ -1,6 +1,9 @@
 const MongoClient = require('mongodb').MongoClient;
-const settings = require('./settings');
-const mongoConfig = settings.mongoConfig;
+require('dotenv').config();
+const mongoConfig =  {
+  "serverUrl": process.env.serverUrl ,
+  "database": "portfolio"
+};
 
 let _connection = undefined;
 let _db = undefined;

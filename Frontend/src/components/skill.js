@@ -1,37 +1,45 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-const skills = {
-    Languages: ['Java', 'JavaScript', 'Python', 'C/C++'],
-    'Web Development': ['React', 'Express.js', 'Angular', 'Bootstrap', 'Material-UI', 'Redux', 'HTML5', 'Axios', 'jQuery'],
-    Database: ['MySql', 'Redis','Elastic Search', 'MongoDB', 'Postgres'],
-    Tools: ['Git', 'Docker', 'Jenkins', 'ElasticSearch', 'Postman', 'GraphQL', 'VS Code', 'PyCharm', 'Jira', 'GCP', 'Slack']
-  };
-  
-  const SkillCard = ({ category, skill }) => {
-    return (
-      <div className="flexcard rounded-md">
-        <h4 className='skillTitle'>{category}</h4>
-        <div className="card-group">
-          {skill.map((item, index) => (
-            <div key={index} className="rounded bg-body p-2 m-2">{item}</div>
-          ))}
-        </div>
-      </div>
-    );
-  };
-function Timeline() {
+const SkillCard = ({ category, skills }) => {
   return (
-    <>
-    <div className='skill'>
-    <h2 className ='title'>Skills</h2>
-      <div className="flex-container">
-        {Object.entries(skills).map(([category, skillList]) => (
-          <SkillCard key={category} category={category} skill={skillList} />
+    <div className="flexcard rounded-md">
+      <h4 className='skillTitle'>{category}</h4>
+      <div className="card-group">
+        {skills.map((skill, index) => (
+          <div key={index} className="rounded bg-body p-2 m-2">{skill}</div>
         ))}
       </div>
     </div>
-    </>
+  );
+};
+
+function Skill() {
+  const [skillsData, setSkillsData] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:4000/skill")
+      .then(response => {
+        setSkillsData(response.data);
+      })
+      .catch(err => console.log(err));
+  }, []);
+
+  return (
+    <div className='skill'>
+      <h2 className='title'>Skills</h2>
+      <div className="flex-container">
+        {skillsData.map(skillSet => (
+          Object.entries(skillSet).map(([key, value]) => {
+            if (key !== "_id") {
+              return <SkillCard key={key} category={key} skills={value} />;
+            }
+            return null;
+          })
+        ))}
+      </div>
+    </div>
   );
 }
 
-export default Timeline;
+export default Skill;
