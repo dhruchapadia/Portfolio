@@ -39,7 +39,7 @@ function Timeline() {
               </p>
             </div>
           ) : (
-            <h2 className="default-message">Click on a company for details</h2>
+            <h2 className="default-message">&lt;-- Click for details</h2>
           )}
         </div>
       </div>

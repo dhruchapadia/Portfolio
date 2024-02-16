@@ -26,7 +26,7 @@ body{
   text-decoration: none;
 }
 .track-table th, .track-table td {
-  border: 5px solid #ddd;
+  border: 3px solid #ddd;
   padding: 8px;
   text-align: left;
 }
@@ -93,7 +93,6 @@ body{
   color: #8b8a91 !important;
   margin: 15px auto;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(7, 15, 43, 0.617); 
 }
 .profile {
   background-color: #1c1b23;
@@ -152,6 +151,7 @@ box-shadow: 0 4px 8px #000;
   width: 20%;
   display: flex;
   align-items: center;
+  padding: 20px;
   justify-content: center;
 }
 
@@ -200,6 +200,13 @@ box-shadow: 0 4px 8px #000;
   padding: 10px;
   text-align: left;
 }
+
+.details {
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
 .details a{
   color: #2bd576;
 }
@@ -218,6 +225,7 @@ box-shadow: 0 4px 8px #000;
   padding: 20px;
   background-color:#1c1b23;
   box-shadow: 6px 4px 4px hsla(0, 0%, 100%, 0.363);
+  border-radius: 5px;
   margin: 20px 10px;
 }
 .project-details {

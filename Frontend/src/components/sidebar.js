@@ -11,12 +11,6 @@ function Sidebar() {
       <div className='sidebar'>
         <h2 className="social-link"> Social </h2>
         <div className="social-link">
-          <a href='https://www.instagram.com/dhruchapadia/'>
-            <img src={instagram} alt="Instagram" className="social-icon" />
-            <span>Instagram</span>
-          </a>
-        </div>
-        <div className="social-link">
           <a href='https://www.linkedin.com/in/dhruchap16/'>
             <img src={linkedin} alt="LinkedIn" className="social-icon" />
             <span>LinkedIn</span>
@@ -29,13 +23,19 @@ function Sidebar() {
           </a>
         </div>
         <div className="social-link">
+          <a href='https://www.instagram.com/dhruchapadia/'>
+            <img src={instagram} alt="Instagram" className="social-icon" />
+            <span>Instagram</span>
+          </a>
+        </div>
+        <div className="social-link">
           <a href='mailto:cdhru2000@gmail.com'>
             <img src={gmail} alt="Email" className="social-icon" />
             <span>Email</span>
           </a>
         </div>
         <div className="social-link">
-          <a href={resume} download>
+          <a href={resume}>
             <img src={resumeImage} alt="Resume" className="social-icon" />
             <span>Resume</span>
           </a>

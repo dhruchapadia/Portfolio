@@ -80,7 +80,7 @@ const Spotify = () => {
   return (
     <div>
       <h1 className ='title'>Top Tracks</h1>
-      <h6 className ='title'>Explore my real-time top tracks and artists, updated dynamically using <a href="https://developer.spotify.com/documentation/web-api">this API </a> , perfect for music enthusiasts.This api</h6>
+      <h6 className ='title'>Explore my real-time top tracks and artists, updated dynamically using <a href="https://developer.spotify.com/documentation/web-api">this API</a> , perfect for music enthusiasts.</h6>
       <div className='spotifyTable'>
       <table className="track-table">
         <thead>

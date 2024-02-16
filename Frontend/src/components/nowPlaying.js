@@ -57,12 +57,12 @@ const NowPlaying = () => {
     <div className="now-playing">
       {nowPlaying ? (
         <div>
-        <h4>Juzou is currently listening</h4>
+        <h4>Currently listening</h4>
           <a href={nowPlaying.external_urls.spotify}><h3>{nowPlaying.name}</h3></a>
           <p>{nowPlaying.artists.map(artist => artist.name).join(', ')}</p>
         </div>
       ) : (
-        <h4>Juzou is not listening to Spotify right now.</h4>
+        <h4>Not listening to Spotify right now.</h4>
       )}
     </div>
   );

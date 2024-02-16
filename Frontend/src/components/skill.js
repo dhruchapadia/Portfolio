@@ -17,7 +17,6 @@ const SkillCard = ({ category, skills }) => {
 function Skill() {
   const url = process.env.REACT_APP_MONGO_URL;
   const [skillsData, setSkillsData] = useState([]);
-  console.log(url)
   useEffect(() => {
     axios.get(url+"skill")
       .then(response => {
